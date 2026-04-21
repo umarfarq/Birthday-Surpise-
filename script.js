@@ -118,11 +118,11 @@ function fireworks() {
 // Quotes Animation
 function showQuotes() {
   const quotes = [
-    '"The more you praise and celebrate your life, the more there is in life to celebrate." – Oprah Winfrey',
+    '"Happy Birthday! I hope your day is filled with your favorite sweets and cakes, beautiful roses. May this year bring you healing, happiness, and the very best of everything." ',
     '"I ve seen your scars, your flaws, your mood swings, you hungry, dramatic, jealous, tired, messy — everything"!" I’ve seen you on the bad days, the worst days, and the days you didn’t even like yourself.                          And yet, every version of you made me fall in love a little more. And I would say it a million times:           “You are the best thing that has ever happened to me… You are perfect!” May this year bring you endless joy, beautiful moments, and all the love your heart can hold. ✨"',
     '"I promise to annoy you, love you, and stand by you forever 🤭!"',
     '"And yes… you are getting older 😜 but don’t worry, you’re still cute 😂❤️."',
-    '"Happy Birthday to my baby,kuchupuchu,bhondu,cutu,shona,mylove,jaan-jaanu,                                         enjoy the 24th trip around the Sun!"'
+    '"Happy Birthday to my baby,kuchupuchu,bhondu,cutu,shona,mylove,jaan-jaanu, enjoy the 24th trip around the Sun!"'
   ];
   
   quotes.forEach((quote, index) => {
