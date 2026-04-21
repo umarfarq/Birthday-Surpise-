@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#ffe4ec">
+  <title>Happy Birthday Almaz 🎉💖</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Pacifico:wght@400;700&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎂</text></svg>">
+</head>
+<body>
+  <!-- Music Toggle -->
+  <div id="musicToggle">🔊</div>
+
+  <!-- Continuous Falling Background -->
+  <div id="fallingContainer" class="falling-container"></div>
+
+  <!-- Hidden Music -->
+  <audio id="bgMusic" loop preload="auto">
+    <source src="bdmusic.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Page 1: Intro -->
+  <div class="page active" id="page1">
+    <div class="card">
+      <h1>💖 Happy Birthday Mohtarma 💖</h1>
+      <p style="font-size: 18px; margin-bottom: 30px;">here is something special for You</p>
+      <button onclick="nextPage(2)">Let's Begin 🎬</button>
+    </div>
+  </div>
+
+  <!-- Page 2: Story Teaser -->
+  <div class="page" id="page2">
+    <div class="card">
+      <h2>On this special day...</h2>
+      <p id="typingText"></p>
+      <button onclick="nextPage(3)">Continue ➡️</button>
+    </div>
+  </div>
+
+  <!-- Page 3: Gift Tease -->
+  <div class="page" id="page3">
+<div class="card">
+      <h3>💖 Special Moments 💖</h3>
+      <div class="heart-gallery"></div>
+      <button onclick="nextPage(4)" style="margin-top: 30px;">Continue to Surprise 🎉</button>
+    </div>
+  </div>
+
+  <!-- Page 4: Passcode (2204) -->
+  <div class="page" id="page4">
+    <div class="card">
+      <h3>🔐 Unlock the Surprise</h3>
+      <p style="font-size: 16px; margin-bottom: 20px;">Enter the secret passcode</p>
+      <div id="passcodeDots" style="font-size: 32px; font-weight: bold; letter-spacing: 10px; margin: 20px 0; height: 50px;">____</div>
+      
+      <div class="keypad">
+        <button onclick="pressKey('1')">1</button>
+        <button onclick="pressKey('2')">2</button>
+        <button onclick="pressKey('3')">3</button>
+        <button onclick="pressKey('4')">4</button>
+        <button onclick="pressKey('5')">5</button>
+        <button onclick="pressKey('6')">6</button>
+        <button onclick="pressKey('7')">7</button>
+        <button onclick="pressKey('8')">8</button>
+        <button onclick="pressKey('9')">9</button>
+        <button onclick="clearPasscode()" style="background: #ff9bc7;">C</button>
+        <button onclick="pressKey('0')">0</button>
+        <button onclick="checkPasscode()" style="background: #4ecdc4; font-size: 20px;">✓</button>
+      </div>
+      <p style="font-size: 14px; opacity: 0.7; margin-top: 20px;">Hint:The day the world got lucky ✨</p>
+    </div>
+  </div>
+
+  <!-- Page 5: Main Celebration -->
+  <div class="page" id="page5">
+    <div class="card" style="max-width: 95vw; max-height: 90vh;">
+      <h1 style="font-size: clamp(32px, 6vw, 48px); margin-bottom: 10px;">Happy Birthday Almaz! 🎉</h1>
+      <p style="font-size: 20px; margin-bottom: 30px; text-align: center;">Hey… don’t ignore the background 😜 something’s happening there ✨</p>
+      
+      <!-- Birthday Quotes -->
+      <div style="margin: 30px 0;">
+        <div class="quote-card" id="quote1"><div class="quote-text">Loading beautiful words...</div></div>
+        <div class="quote-card" id="quote2"><div class="quote-text">hdjksjksdjajdkjdajkasndkjandk</div></div>
+        <div class="quote-card" id="quote3"><div class="quote-text">dbhasbnasnddasndbjsdnasaahjbd</div></div>
+        <div class="quote-card" id="quote4"><div class="quote-text">zzzzzzzzz</div></div>
+        <div class="quote-card" id="quote5"><div class="quote-text">xxxxxxxxxxxxxxx</div></div>
+      </div>
+
+      <!-- Photo Gallery -->
+      <h3 style="margin: 30px 0 20px 0;">here is the cutest girl 💖👇🏼 </h3>
+      <div class="photo-gallery"></div>
+
+      <div style="margin-top: 40px; padding-top: 30px; border-top: 2px dashed #ff9bc7;">
+        <p style="font-family: 'Dancing Script'; font-size: 22px;">Once Again Happy Birthday my love, my Chopa🎂❤️</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>Made with ❤️ by Ur Nautanki</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
